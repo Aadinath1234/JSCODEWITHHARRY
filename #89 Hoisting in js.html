@@ -1,0 +1,14 @@
+<script>
+ // Following two lines will run successfully due to hoisting 
+ console.log(a)//undefined
+ greet() // goodmorning
+ function greet(){
+    console.log("Good Morning");
+ }
+
+ var a = 9;
+ console.log(a);// 9
+ let a = 9; // this will produce an error. 
+
+
+</script>

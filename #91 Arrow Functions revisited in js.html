@@ -1,0 +1,37 @@
+<script>
+  const sayHello =(name)=>{
+    console.log("hi bro " + name)
+  }
+  sayHello("aadi")
+
+// it can also be written as : 
+const sayHello1 = (name, greeting) => console.log(greeting + " " + name)
+sayHello1("harry", "goodmorningbhai");
+
+
+
+const x = {
+    name : "Harry",
+    role: "Js developer",
+    exp: 30,
+    show: function(){
+        //let that = this
+        //console.log(this)
+        setTimeout(() =>{
+        console.log(`The name is ${this.name}\n the role is ${this.role}`)
+        }, 2000)
+
+    }
+}
+x.show()
+
+
+
+
+
+
+
+
+
+
+</script>
