@@ -1,0 +1,48 @@
+<script>
+    class Animal{
+        constructor(name){
+            this.name = name
+        }
+        fly(){
+            alert("Mai ud raha hu")
+        }
+
+        get name(){
+            return this._name
+        }
+        set name(newName){
+            this._name = newName
+        }
+    }
+
+    class Rabbit extends Animal{
+        eatCarrot(){
+            console.log("Eating Carrot");
+        }
+    }
+
+
+
+    // let a = new Animal("Bruno")
+    let a = new Rabbit("Bruno")
+    a.fly()
+    console.log(a.name)
+    a.name = "jack"
+    console.log(a.name);
+     
+
+
+    let c = 50;
+    console.log(a instanceof Animal);//true
+    console.log(c instanceof Animal);//false
+    console.log(a instanceof Rabbit);//true
+
+
+
+
+    
+
+
+
+
+</script>
