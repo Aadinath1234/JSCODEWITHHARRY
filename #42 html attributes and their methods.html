@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML attributes and their methods . </title>
+</head>
+<body>
+
+    <div id="first" class="hey" data-game = "mario" data-player = "harry">
+
+        Hey i am first container
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        let a = first.getAttribute("class");
+        console.log(a);
+        console.log(first.hasAttribute("class"));
+        console.log(first.hasAttribute("style"));
+    //  first.setAttribute("hidden", "true");   
+        console.log(first.setAttribute("class", "true sachin"));// this will set the class as the true and sachin. 
+
+        // console.log(first.removeAttribute("class"));//this will remove the class from the element.
+        
+        console.log(first.attributes);// this will write the all attriubes and its description like class and id and its names. 
+
+
+        console.log(first.dataset);// {game: 'mario', player: 'harry'}
+        console.log(first.dataset.game);//mario
+        console.log(first.dataset.player);//harry
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

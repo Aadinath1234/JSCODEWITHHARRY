@@ -1,0 +1,28 @@
+<script>
+    class Railwayform{
+        submit(){
+            alert(this.name +"Your Form is  submitted for train number: " + this.trainno)
+        }
+        cancel(){
+            alert(this.name +"This form is cancelled for train number: " + this.trainno);
+        }
+        fill(givenname,trainno){
+            this.name = givenname
+            this.trainno = trainno
+        }
+    }
+
+// Create a form for harry
+    let harryForm = new Railwayform()
+// Fill the form with Harry's details
+harryForm.fill("harry", 145316)
+// create a form for rohan
+    let rohnForm = new Railwayform()
+    // fill the form with Rohan's details
+    rohnForm.fill("Rohan",12222);
+    harryForm.submit()
+    rohnForm.submit()
+    rohnForm.cancel()
+
+
+</script>

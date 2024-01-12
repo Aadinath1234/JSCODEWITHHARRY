@@ -1,0 +1,26 @@
+<script>
+class RailwayForm{
+    constructor(givenname, trainno){
+        console.log("CONSTRUCTOR CALLED..." + givenname + " "+trainno);
+        this.name = givenname
+        this.trainno = trainno
+    }
+    submit(){
+        alert(this.name + ":your form is submitted for train number: " + this.trainno)
+    }
+    cancel(){
+        alert(this.name + ": This form is cancelled for train number : " + this.trainno)
+    }
+    
+}
+
+let harryForm = new RailwayForm()
+let rohanForm = new RailwayForm()
+let rohanForm2 = new RailwayForm()
+
+
+harryForm.submit()
+rohanForm.submit()
+rohanForm2.cancel()
+
+</script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+
+    <div class="container">
+        <button onmouseenter="console.log('container k andar mouse gaya')" onclick = "alert('hello'); let a = 6; 
+         console.log(a)">Click Me</button>
+    </div>
+
+    //here the onmouseenter is an event. 
+
+    <script>
+        let a1 = document.getElementsByClassName("container")[0]
+        a1.onclick = () =>{
+            let b = document.getElementsByClassName("container")[0]
+            b.innerHTML = "hello this is me ";
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML insertion methods. </title>
+</head>
+<body>
+    I am the start of this container (outer)
+    <div class="container">
+        I am the start of this container (inner).
+        <div id="first">
+            I am a first element. 
+        </div>
+        I am end of this container (inner).
+    </div>
+    I am the end of the container (outer)
+
+
+
+
+    <script>
+        let a = document.getElementsByTagName('div')[0];
+        a.innerHTML = a.innerHTML + '<h1>Hello World ! </h1>';
+
+
+
+        let div = document.createElement('section');
+        div.innerHTML = '<h1> this is the section element </h1>';
+        // a.appendChild(div);
+        // this will add the section element to the html.
+        // a.append(div);
+        // a.prepend(div);//section element will be at the top of the paragraph.but after some changes it is present in b/w two elements.
+
+        // a.before(div);//by using this method that div element is just out of the container and leave its original place and came out of the box.
+
+
+        // a.after(div);
+        // by this the end div element goes out of the box in the last position.
+
+        a.replaceWith(div);
+        // by this all the elements  is replace by the div.
+
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokesite</title>
+    <style>
+        html, body{
+            height: 100%;
+            width: 100%;
+        }
+
+        #joke{
+            background-color: #f5f5f5;
+            color: #333;
+            font-size: 1.5em;
+            font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="joke">This is a sample joke </div>
+    <script>
+        let myjokes ={
+        "jokes": [
+        {
+            "category": "Misc",
+            "type": "single",
+            "joke": "What does the MacBook have in common with Donald Trump?\n\nI would tell you....\nBut I don't compare apples to oranges.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": true,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 233,
+            "safe": false,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "twopart",
+            "setup": "Why do programmers wear glasses?",
+            "delivery": "Because they need to C#",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 50,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Misc",
+            "type": "twopart",
+            "setup": "I won the lottery today!",
+            "delivery": "Well, I only got the first two numbers, but my lawyers are working on having them stop the count.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": true,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 258,
+            "safe": false,
+            "lang": "en"
+        },
+        {
+            "category": "Misc",
+            "type": "single",
+            "joke": "I visited my friend at his new house. He told me to make myself at home. So I threw him out. I hate having visitors.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "safe": true,
+            "id": 304,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "twopart",
+            "setup": "Why do they call it hyper terminal?",
+            "delivery": "Too much Java.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 226,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "There are only 10 kinds of people in this world: those who know binary and those who don't.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 35,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Programming",
+            "type": "single",
+            "joke": "The glass is neither half-full nor half-empty, the glass is twice as big as it needs to be.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 23,
+            "safe": true,
+            "lang": "en"
+        },
+        {
+            "category": "Misc",
+            "type": "single",
+            "joke": "Never date a baker. They're too kneady.",
+            "flags": {
+                "nsfw": false,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "safe": true,
+            "id": 271,
+            "lang": "en"
+        },
+        {
+            "category": "Misc",
+            "type": "single",
+            "joke": "Stop being homophobic and rude to the LGBTQ+ community. You should be thanking them for saving us plenty of room in heaven.",
+            "flags": {
+                "nsfw": false,
+                "religious": true,
+                "political": false,
+                "racist": false,
+                "sexist": false,
+                "explicit": false
+            },
+            "id": 114,
+            "safe": false,
+            "lang": "en"
+        },
+        {
+            "category": "Misc",
+            "type": "single",
+            "joke": "Women are like KFC, once you're done with the breasts and thighs, you just have a greasy box to put your bone in.",
+            "flags": {
+                "nsfw": true,
+                "religious": false,
+                "political": false,
+                "racist": false,
+                "sexist": true,
+                "explicit": true
+            },
+            "id": 149,
+            "safe": false,
+            "lang": "en"
+        },
+
+    ]
+        }
+
+
+
+let index = Math.floor(Math.random() * (myjokes.jokes.length - 1))
+console.log(index)
+joke.innerHTML = myjokes.jokes[index].joke;
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

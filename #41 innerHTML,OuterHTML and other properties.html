@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML outerHTML</title>
+</head>
+<body>Hello world
+    <span id="wow" ><b>HI Bro</b>Hey I am span</span>
+
+    <div id="wow2" hidden>how are you bro fine or not , to hide the element we use hidden property. </div>
+
+
+
+<script>
+  //  console.log(document.getElementsByTagName("span")[0]); output: <span>Hey I am span</span>
+  
+//   console.dir(document.getElementsByTagName("span")[0]); output : <span> tag as an object  and after that all the properties will get printed.
+
+console.log(document.body.firstChild.nodeName);//#text
+console.log(document.body.firstElementChild.nodeName);//SPAN
+
+document.write(wow.innerHTML);
+
+
+// to insert the tag with text : 
+document.write(wow.innerHTML = "<i>here we are inserting a italic tag with some text </i>");
+
+console.log(wow2.outerHTML); // <div id="wow2">how are you bro fine or not </div>
+console.log(wow2.outerHTML = "<div> this the text of the outerHTML and we are inserting this text into the page </div>");//<div> this the text of the outerHTML and we are inserting this text into the page </div>
+
+console.log("innerHTML is only valid for the element nodes. for other elements we can use .nodevalue or .data ");
+
+
+console.log(document.body.firstChild);//#text
+console.log(document.body.firstElementChild); // span#wow
+console.log(document.body.firstChild.data);// hello world
+console.log(document.body.firstChild.nodeValue);//hello world.
+
+
+console.log(document.body.textContent);
+
+console.log(wow.hidden =" false");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>

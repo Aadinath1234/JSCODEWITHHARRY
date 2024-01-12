@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#48 events</title>
+</head>
+<body>
+
+    <div>
+        <button id="btn">Click me</button>
+    </div>
+    
+
+    <script>
+   
+
+
+ let x = function(e){
+            alert("Hello")
+        }
+
+ let y = function(e){
+            alert("this is the second function")
+    }
+
+
+
+    
+    
+
+     
+
+
+        btn.addEventListener('click',x); 
+
+        btn.addEventListener('click',y); 
+
+        let a = prompt("What is your favourite number? ");
+        if(a == "2"){
+            btn.removeEventListener('click', x) 
+
+            }
+
+
+
+    </script>
+</body>
+</html>

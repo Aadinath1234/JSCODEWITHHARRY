@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout and setInterval</title>
+</head>
+<body>
+    
+
+    <script>
+        alert("Hello")
+
+       let a =  setTimeout(function(){
+            alert("I am inside of settimeout")
+        }, 2000);
+        //settimeout is used when we wanted to run the function after some period of time . 
+
+
+        //to stop the execution of the settimeout we are using cleartimeout. 
+        clearTimeout(a); 
+        console.log(a)
+
+
+
+        // let b = prompt("Do you want to run the settimeout?");
+        // if("n" == b){
+        //     clearTimeout(a)
+        // }
+        // if you choose n then it will use the cleartimeout and that function will vanished. 
+        // console.log(a)
+
+
+       const sum = (a,b) =>{
+        console.log("Yes I am running" +" " +( a + b));
+        a+b;
+       }
+       setTimeout(sum, 1000, 4,5);
+       //here sum is the func and 1000 is the time after the function will run and 4 and 5 are the value of the arguments.
+
+
+       //settimeout runs only ones while the setinterval run after given period of time continuously. 
+
+       setInterval(function(){
+        alert("setinterval")
+       }, 2000);
+       //this function will run after the every 2 seconds.
+       //clearInterval used to stop the execution of the setInterval. 
+       
+       
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

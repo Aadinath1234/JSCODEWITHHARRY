@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changing html classname using js </title>
+
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .yellow{
+            background-color: yellow;
+            color: white;
+        }
+
+        .red{
+            background-color: red;
+            color: white;
+        }
+
+        .text-dark{
+            color:black ;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="first" class="red text-dark">
+        <span>
+            Hey I am good.
+        </span>
+    </div>
+
+
+  
+
+
+    <script>
+        first.className = "text-dark yellow";//this will change background and color of the text. 
+
+        console.log(first.classList);//this will show the total list of the classes.
+
+
+        // console.log(first.classList.remove("yellow"));//using this the given class will be removed.
+
+
+        console.log(first.classList.add("red"));//this is used to add the class red to the element. 
+
+
+      console.log(first.classList.toggle("red"));//toggle is used to add and remove , if present then it will remove the class and if removed then it will add the class. 
+
+
+      console.log(first.classList.contains("red"));
+      console.log(first.classList.contains("yellow"));//contains check the given input class is present in the list or not . if present then it will return true and if not then it will return false.
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

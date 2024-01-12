@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 10 practice set</title>
+</head>
+<body>
+    <!-- here i have escaped q.1 -->
+    <!-- now i am on q.2
+     -->
+
+
+
+    <script>
+        // this is notes applications 2,3,4
+       let n =  localStorage.getItem("Note");
+       alert("your note is" + n);
+       let a = prompt("Enter your note");
+       if(a){
+        localStorage.setItem("note", a)
+       }
+
+       let c = confirm("Do you want to delete your note")
+       if(c){
+        localStorage.removeItem("note")
+        alert("Note deleted successfully");
+
+       }
+
+       
+
+
+
+
+    </script>
+
+
+    
+</body>
+</html>

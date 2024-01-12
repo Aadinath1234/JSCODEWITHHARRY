@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#49 q.2</title>
+</head>
+
+<body>
+    <a > <button id="gg">google</button></a>
+    <a > <button id="fb">facebook</button></a>
+    <a> <button id="tw">twitter</button></a>
+
+    
+
+    <h1>Bookmarks</h1>
+    <script>
+        document.getElementById("gg").addEventListener("click", function () {
+            window.location = "https://www.google.com";
+            win.focus();
+        })
+        document.getElementById("fb").addEventListener("click", function(){
+            window.location = "https://www.facebook.com";
+            win.focus();
+        })
+        document.getElementById("tw").addEventListener("click", function(){
+            window.location = "https://www.twitter.com";
+            win.focus();
+        })
+
+        // solution of the q.4 js
+        const fetchContent = async(url) =>{
+            con = await fetch(url);
+            let a = await con.json()
+            return a;
+        }
+        setInterval(async function(){
+            let url = "https://jsonplaceholder.typicode.com/todos/1"
+            console.log(await fetchContent(url))
+
+        },3000)
+
+    </script>
+
+
+
+</body>
+
+</html>

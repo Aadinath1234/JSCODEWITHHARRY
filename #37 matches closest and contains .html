@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lecture 37</title>
+</head>
+<body>
+
+    <div class="box" id="id1">this is an element 1 <span id="sp1">span 1</span></div>
+    <div class="box" id="id2">this is an element 2</div>
+
+    <script>
+  let id1 = document.getElementById("id1");
+  let sp1 = document.getElementById("sp1");
+  console.log(id1);
+  console.log(id1.matches(".class"))//this will  return false because this class is not present there
+  console.log(id1.matches(".box"));//this will return true because this class is present there.
+
+  console.log(sp1.closest(".box"));//this will written class=box and id =id1 with it.
+
+console.log(sp1.closest("#sp1"));//this will return a sp1 element.
+
+console.log(sp1.contains(sp1)); //true
+console.log(sp1.contains(id1)); //false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+    
+</body>
+</html>
